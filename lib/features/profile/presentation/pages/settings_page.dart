@@ -65,7 +65,9 @@ class SettingsPage extends ConsumerWidget {
             ),
             title: Text(l10n.language),
             subtitle: Text(
-              locale?.languageCode == 'tr' ? 'Türkçe' : 'English',
+              locale?.languageCode == 'tr'
+                  ? l10n.languageTurkish
+                  : l10n.languageEnglish,
             ),
             trailing: const Icon(Icons.chevron_right, size: 20),
             onTap: () => _pickLanguage(context, ref),
@@ -102,21 +104,24 @@ class SettingsPage extends ConsumerWidget {
   Future<void> _pickLanguage(BuildContext context, WidgetRef ref) async {
     final picked = await showModalBottomSheet<String>(
       context: context,
-      builder: (ctx) => SafeArea(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            ListTile(
-              title: const Text('English'),
-              onTap: () => Navigator.pop(ctx, 'en'),
-            ),
-            ListTile(
-              title: const Text('Türkçe'),
-              onTap: () => Navigator.pop(ctx, 'tr'),
-            ),
-          ],
-        ),
-      ),
+      builder: (ctx) {
+        final sheetL10n = AppLocalizations.of(ctx)!;
+        return SafeArea(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              ListTile(
+                title: Text(sheetL10n.languageEnglish),
+                onTap: () => Navigator.pop(ctx, 'en'),
+              ),
+              ListTile(
+                title: Text(sheetL10n.languageTurkish),
+                onTap: () => Navigator.pop(ctx, 'tr'),
+              ),
+            ],
+          ),
+        );
+      },
     );
     if (picked != null) {
       await ref.read(localeProvider.notifier).setLocale(Locale(picked));

@@ -203,6 +203,12 @@ class AppLocalizationsTr extends AppLocalizations {
   String get language => 'Dil';
 
   @override
+  String get languageEnglish => 'İngilizce';
+
+  @override
+  String get languageTurkish => 'Türkçe';
+
+  @override
   String get signOut => 'Çıkış yap';
 
   @override

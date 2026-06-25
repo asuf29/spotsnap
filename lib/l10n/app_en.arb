@@ -76,6 +76,8 @@
   "settings": "Settings",
   "darkMode": "Dark mode",
   "language": "Language",
+  "languageEnglish": "English",
+  "languageTurkish": "Turkish",
   "signOut": "Sign out",
   "premiumTitle": "Create viral content\nwithout limits",
   "premiumSubtitle": "Everything you need for aesthetic travel shoots.",

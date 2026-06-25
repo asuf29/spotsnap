@@ -61,6 +61,8 @@
   "settings": "Ayarlar",
   "darkMode": "Karanlık mod",
   "language": "Dil",
+  "languageEnglish": "İngilizce",
+  "languageTurkish": "Türkçe",
   "signOut": "Çıkış yap",
   "premiumTitle": "Sınırsız viral içerik\nüret",
   "premiumSubtitle": "Estetik seyahat çekimleri için ihtiyacın olan her şey.",

@@ -15,7 +15,7 @@ class AppTheme {
     final colorScheme = isDark
         ? const ColorScheme.dark(
             primary: AppColors.gold,
-            onPrimary: AppColors.black,
+            onPrimary: AppColors.white,
             secondary: AppColors.goldDark,
             surface: AppColors.darkSurface,
             onSurface: AppColors.textOnDark,

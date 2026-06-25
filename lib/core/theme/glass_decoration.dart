@@ -44,9 +44,6 @@ class GlassDecoration {
   }
 
   static LinearGradient accentShimmer() {
-    return const LinearGradient(
-      colors: [AppColors.gold, AppColors.goldDark, AppColors.gold],
-      stops: [0.0, 0.5, 1.0],
-    );
+    return AppColors.brandGradient;
   }
 }

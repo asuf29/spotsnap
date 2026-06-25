@@ -23,10 +23,15 @@ class AppLogo extends StatelessWidget {
         Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(
-              Icons.camera_alt_outlined,
-              size: size * 0.6,
-              color: AppColors.gold,
+            ShaderMask(
+              blendMode: BlendMode.srcIn,
+              shaderCallback: (bounds) =>
+                  AppColors.brandGradient.createShader(bounds),
+              child: Icon(
+                Icons.camera_alt_outlined,
+                size: size * 0.6,
+                color: AppColors.white,
+              ),
             ),
             const SizedBox(width: 8),
             Text(

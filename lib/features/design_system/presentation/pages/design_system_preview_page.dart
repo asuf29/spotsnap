@@ -49,10 +49,36 @@ class DesignSystemPreviewPage extends ConsumerWidget {
                 _ColorSwatch('Black', AppColors.black),
                 _ColorSwatch('White', AppColors.white),
                 _ColorSwatch('Beige', AppColors.beige),
-                _ColorSwatch('Gold', AppColors.gold),
+                _ColorSwatch('Brand', AppColors.brand),
+                _ColorSwatch('Accent', AppColors.gold),
+                _ColorSwatch('Accent Dark', AppColors.goldDark),
                 _ColorSwatch('Blush', AppColors.pastelBlush),
                 _ColorSwatch('Sage', AppColors.pastelSage),
                 _ColorSwatch('Sky', AppColors.pastelSky),
+              ],
+            ),
+          ),
+          _Section(
+            title: 'Gradients',
+            child: Column(
+              children: [
+                Container(
+                  height: 48,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    gradient: AppColors.brandGradient,
+                  ),
+                ),
+                const SizedBox(height: AppSpacing.sm),
+                Container(
+                  height: 48,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    gradient: AppColors.brandGradientRadial,
+                  ),
+                ),
               ],
             ),
           ),

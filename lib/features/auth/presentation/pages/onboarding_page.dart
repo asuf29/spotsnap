@@ -101,10 +101,15 @@ class _OnboardingPageState extends ConsumerState<OnboardingPage> {
                                 colors: gradientColors,
                               ),
                             ),
-                            child: Icon(
-                              slide.icon,
-                              size: 80,
-                              color: AppColors.gold,
+                            child: ShaderMask(
+                              blendMode: BlendMode.srcIn,
+                              shaderCallback: (bounds) =>
+                                  AppColors.brandGradient.createShader(bounds),
+                              child: Icon(
+                                slide.icon,
+                                size: 80,
+                                color: AppColors.white,
+                              ),
                             ),
                           ).animate().fadeIn(duration: 400.ms),
                         ),

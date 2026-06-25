@@ -33,12 +33,10 @@ class GoldBadge extends StatelessWidget {
     return DecoratedBox(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(isSmall ? 10 : 12),
-        gradient: const LinearGradient(
-          colors: [AppColors.gold, AppColors.goldDark],
-        ),
+        gradient: AppColors.brandGradient,
         boxShadow: [
           BoxShadow(
-            color: AppColors.gold.withValues(alpha: 0.35),
+            color: AppColors.brand.withValues(alpha: 0.4),
             blurRadius: 8,
             offset: const Offset(0, 2),
           ),

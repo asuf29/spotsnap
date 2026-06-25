@@ -9,19 +9,35 @@ class AppColors {
   static const Color beige = Color(0xFFDFE7ED);
   static const Color beigeLight = Color(0xFFEBF1F5);
 
-  // Accent system (Ocean Teal)
-  static const Color gold = Color(0xFF2BA8A8);
-  static const Color goldLight = Color(0xFF4CC4C0);
-  static const Color goldDark = Color(0xFF1E8585);
+  // Brand reference
+  static const Color brand = Color(0xFF8FD5F5);
 
-  // Pastel accents (cool-toned)
-  static const Color pastelBlush = Color(0xFFE0ECF1);
-  static const Color pastelSage = Color(0xFFD6ECE8);
-  static const Color pastelSky = Color(0xFFD4E6F5);
-  static const Color pastelLavender = Color(0xFFDCDDF2);
-  static const Color pastelAmber = Color(0xFFD8EAEF);
+  // Accent system (derived from brand)
+  static const Color gold = Color(0xFF4BB8D8);
+  static const Color goldLight = brand;
+  static const Color goldDark = Color(0xFF2698B8);
 
-  // Dark mode surfaces (blue-tinted)
+  // Brand gradients
+  static const LinearGradient brandGradient = LinearGradient(
+    begin: Alignment.centerLeft,
+    end: Alignment.centerRight,
+    colors: [goldLight, gold, goldDark],
+    stops: [0.0, 0.5, 1.0],
+  );
+
+  static const RadialGradient brandGradientRadial = RadialGradient(
+    colors: [goldLight, gold, goldDark],
+    stops: [0.0, 0.55, 1.0],
+  );
+
+  // Pastel accents (brand-tinted)
+  static const Color pastelBlush = Color(0xFFE3F3FA);
+  static const Color pastelSage = Color(0xFFDCEEF6);
+  static const Color pastelSky = Color(0xFFD4EFF9);
+  static const Color pastelLavender = Color(0xFFD8EEF5);
+  static const Color pastelAmber = Color(0xFFDAF0F7);
+
+  // Dark mode surfaces (cyan-tinted)
   static const Color darkSurface = Color(0xFF0C1117);
   static const Color darkCard = Color(0xFF151C24);
   static const Color darkCardElevated = Color(0xFF1D2631);

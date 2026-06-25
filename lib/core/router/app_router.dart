@@ -5,7 +5,6 @@ import 'package:go_router/go_router.dart';
 import '../../features/auth/presentation/pages/login_page.dart';
 import '../../features/auth/presentation/pages/onboarding_page.dart';
 import '../../features/auth/presentation/pages/splash_page.dart';
-import '../../features/design_system/presentation/pages/design_system_preview_page.dart';
 import '../../features/create/presentation/pages/create_page.dart';
 import '../../features/outfit/presentation/pages/outfit_planner_page.dart';
 import '../../features/photo_assistant/presentation/pages/photo_assistant_page.dart';
@@ -14,6 +13,7 @@ import '../../features/discover/presentation/pages/discover_page.dart';
 import '../../features/home/presentation/pages/home_page.dart';
 import '../../features/plan/presentation/pages/plan_page.dart';
 import '../../features/profile/presentation/pages/profile_page.dart';
+import '../../features/profile/presentation/pages/settings_page.dart';
 import '../../features/social/presentation/pages/bucket_list_page.dart';
 import '../../features/social/presentation/pages/favorites_page.dart';
 import '../../features/social/presentation/pages/moodboard_detail_page.dart';
@@ -55,14 +55,6 @@ final appRouterProvider = Provider<GoRouter>((ref) {
             child: SpotDetailPage(spotId: id),
           );
         },
-      ),
-      GoRoute(
-        path: AppRoutes.designSystem,
-        parentNavigatorKey: _rootNavigatorKey,
-        pageBuilder: (context, state) => FadeScaleTransitionPage(
-          key: state.pageKey,
-          child: const DesignSystemPreviewPage(),
-        ),
       ),
       GoRoute(
         path: AppRoutes.poseAssistant,
@@ -199,6 +191,16 @@ final appRouterProvider = Provider<GoRouter>((ref) {
                 pageBuilder: (context, state) => const NoTransitionPage(
                   child: ProfilePage(),
                 ),
+                routes: [
+                  GoRoute(
+                    path: 'settings',
+                    parentNavigatorKey: _rootNavigatorKey,
+                    pageBuilder: (context, state) => FadeScaleTransitionPage(
+                      key: state.pageKey,
+                      child: const SettingsPage(),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),

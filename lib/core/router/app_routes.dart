@@ -10,11 +10,11 @@ class AppRoutes {
   static const plan = '/plan';
   static const create = '/create';
   static const profile = '/profile';
+  static const settings = '/profile/settings';
 
   static const spotDetail = '/spot/:id';
   static String spotDetailPath(String id) => '/spot/$id';
 
-  static const designSystem = '/design-system';
   static const poseAssistant = '/pose';
   static const outfitPlanner = '/outfit';
   static const photoAssistant = '/photo-assistant';

@@ -5,14 +5,10 @@ import 'package:go_router/go_router.dart';
 import '../../../../core/router/app_routes.dart';
 import '../../../../core/theme/app_colors.dart';
 import '../../../../core/theme/app_spacing.dart';
-import '../../../../features/notifications/presentation/providers/notification_providers.dart';
 import '../../../../features/subscription/presentation/providers/subscription_providers.dart';
 import '../../../../l10n/app_localizations.dart';
-import '../../../../shared/providers/locale_provider.dart';
-import '../../../../shared/providers/theme_mode_provider.dart';
 import '../../../../shared/widgets/design_system/design_system.dart';
 import '../../../../shared/widgets/glass_container.dart';
-import '../../../auth/presentation/providers/auth_providers.dart';
 import '../../../social/presentation/providers/social_providers.dart';
 
 class ProfilePage extends ConsumerWidget {
@@ -23,14 +19,11 @@ class ProfilePage extends ConsumerWidget {
     final theme = Theme.of(context);
     final isDark = theme.brightness == Brightness.dark;
     final l10n = AppLocalizations.of(context)!;
-    final themeMode = ref.watch(themeModeProvider);
-    final locale = ref.watch(localeProvider);
     final profile = ref.watch(socialProfileProvider);
     final favorites = ref.watch(favoriteSpotIdsProvider).length;
     final bucket = ref.watch(bucketListCityIdsProvider).length;
     final boards = ref.watch(moodboardsProvider).length;
     final saved = ref.watch(savedCityIdsProvider).length;
-    final notificationsOn = ref.watch(notificationsEnabledProvider);
     final isPremium = ref.watch(isPremiumProvider);
 
     return SafeArea(
@@ -39,6 +32,28 @@ class ProfilePage extends ConsumerWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Row(
+              children: [
+                Expanded(
+                  child: Text(
+                    l10n.navProfile,
+                    style: theme.textTheme.headlineLarge,
+                  ),
+                ),
+                IconButton(
+                  icon: Icon(
+                    Icons.settings_outlined,
+                    color: isDark
+                        ? AppColors.textMutedOnDark
+                        : AppColors.textSecondary,
+                  ),
+                  tooltip: l10n.settings,
+                  onPressed: () => context.push(AppRoutes.settings),
+                ),
+              ],
+            ),
+            const SizedBox(height: AppSpacing.sm),
+
             // Profile header
             Row(
               children: [
@@ -190,104 +205,11 @@ class ProfilePage extends ConsumerWidget {
               subtitle: l10n.submitHiddenGems,
               onTap: () => context.push(AppRoutes.submitSpot),
             ),
-            const SizedBox(height: AppSpacing.lg),
-
-            // Settings section
-            _SectionHeader(title: l10n.settings),
-            const SizedBox(height: AppSpacing.xs),
-            SwitchListTile(
-              contentPadding: EdgeInsets.zero,
-              title: Text(l10n.darkMode),
-              activeThumbColor: AppColors.gold,
-              value: themeMode == ThemeMode.dark,
-              onChanged: (value) {
-                ref.read(themeModeProvider.notifier).setMode(
-                      value ? ThemeMode.dark : ThemeMode.light,
-                    );
-              },
-            ),
-            SwitchListTile(
-              contentPadding: EdgeInsets.zero,
-              title: Text(l10n.goldenHourAlerts),
-              subtitle: Text(l10n.goldenHourAlertsSubtitle),
-              activeThumbColor: AppColors.gold,
-              value: notificationsOn,
-              onChanged: (value) async {
-                final service = ref.read(notificationServiceProvider);
-                if (value) {
-                  await service.requestPermissionAndEnable();
-                } else {
-                  await service.disable();
-                }
-                ref.invalidate(notificationsEnabledProvider);
-              },
-            ),
-            ListTile(
-              contentPadding: EdgeInsets.zero,
-              leading: Icon(Icons.language_rounded,
-                  color: isDark
-                      ? AppColors.textMutedOnDark
-                      : AppColors.textSecondary),
-              title: Text(l10n.language),
-              subtitle: Text(
-                locale?.languageCode == 'tr' ? 'Türkçe' : 'English',
-              ),
-              trailing: const Icon(Icons.chevron_right, size: 20),
-              onTap: () => _pickLanguage(context, ref),
-            ),
-            ListTile(
-              contentPadding: EdgeInsets.zero,
-              leading: Icon(Icons.palette_outlined,
-                  color: isDark
-                      ? AppColors.textMutedOnDark
-                      : AppColors.textSecondary),
-              title: const Text('Design System'),
-              subtitle: const Text('Component preview'),
-              trailing: const Icon(Icons.chevron_right, size: 20),
-              onTap: () => context.push(AppRoutes.designSystem),
-            ),
-            ListTile(
-              contentPadding: EdgeInsets.zero,
-              leading: Icon(Icons.logout_rounded,
-                  color: isDark
-                      ? AppColors.textMutedOnDark
-                      : AppColors.textSecondary),
-              title: Text(l10n.signOut),
-              trailing: const Icon(Icons.chevron_right, size: 20),
-              onTap: () async {
-                await ref.read(authSessionProvider.notifier).signOut();
-                if (context.mounted) context.go(AppRoutes.login);
-              },
-            ),
             const SizedBox(height: AppSpacing.md),
           ],
         ),
       ),
     );
-  }
-
-  Future<void> _pickLanguage(BuildContext context, WidgetRef ref) async {
-    final picked = await showModalBottomSheet<String>(
-      context: context,
-      builder: (ctx) => SafeArea(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            ListTile(
-              title: const Text('English'),
-              onTap: () => Navigator.pop(ctx, 'en'),
-            ),
-            ListTile(
-              title: const Text('Türkçe'),
-              onTap: () => Navigator.pop(ctx, 'tr'),
-            ),
-          ],
-        ),
-      ),
-    );
-    if (picked != null) {
-      await ref.read(localeProvider.notifier).setLocale(Locale(picked));
-    }
   }
 
   Future<void> _editInstagram(

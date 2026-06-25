@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 import '../../core/theme/app_colors.dart';
 import '../../features/route/presentation/providers/route_providers.dart';
 import '../../l10n/app_localizations.dart';
+import '../providers/shell_navigation_provider.dart';
 
 class MainShell extends ConsumerWidget {
   const MainShell({
@@ -22,7 +23,10 @@ class MainShell extends ConsumerWidget {
     final selected = ref.watch(selectedRouteSpotIdsProvider);
 
     return Scaffold(
-      body: navigationShell,
+      body: ActiveShellBranch(
+        index: navigationShell.currentIndex,
+        child: navigationShell,
+      ),
       bottomNavigationBar: DecoratedBox(
         decoration: BoxDecoration(
           border: Border(

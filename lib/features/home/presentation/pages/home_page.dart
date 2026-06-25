@@ -8,6 +8,7 @@ import '../../../../core/theme/app_spacing.dart';
 import '../../../../features/discover/presentation/providers/discover_providers.dart';
 import '../../../../features/spot/domain/entities/spot_extensions.dart';
 import '../../../../l10n/app_localizations.dart';
+import '../../../../shared/providers/shell_navigation_provider.dart';
 import '../../../../shared/widgets/design_system/design_system.dart';
 import '../../../../shared/widgets/glass_container.dart';
 
@@ -28,8 +29,10 @@ class HomePage extends ConsumerWidget {
     final l10n = AppLocalizations.of(context)!;
     final featured = ref.watch(featuredSpotsProvider);
 
-    return SafeArea(
-      child: CustomScrollView(
+    return HeroMode(
+      enabled: shellHeroesEnabled(context, ShellBranch.home),
+      child: SafeArea(
+        child: CustomScrollView(
         slivers: [
           SliverToBoxAdapter(
             child: Padding(
@@ -132,6 +135,7 @@ class HomePage extends ConsumerWidget {
           ),
           const SliverToBoxAdapter(child: SizedBox(height: 100)),
         ],
+        ),
       ),
     );
   }

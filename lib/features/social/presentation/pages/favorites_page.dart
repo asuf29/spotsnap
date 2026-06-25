@@ -53,7 +53,6 @@ class FavoritesPage extends ConsumerWidget {
                   bestTimeLabel: spot.bestTimeLabel,
                   crowd: spot.crowd,
                   vibes: spot.vibes,
-                  heroTag: 'spot-image-${spot.id}',
                   onTap: () =>
                       context.push(AppRoutes.spotDetailPath(spot.id)),
                 )

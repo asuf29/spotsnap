@@ -81,29 +81,36 @@ class SpotPreviewCard extends StatelessWidget {
                 ),
               ),
 
-              // Top row: golden hour chip + vibe chip
+              // Top row: allow chips to wrap on narrow grid cards.
               if (bestTimeLabel != null || vibes.isNotEmpty)
                 Positioned(
                   top: AppSpacing.xs,
                   left: AppSpacing.xs,
                   right: AppSpacing.xs,
-                  child: Row(
-                    children: [
-                      if (bestTimeLabel != null)
-                        Flexible(
-                          child: GoldenHourChip(
-                            label: bestTimeLabel!,
-                            compact: true,
+                  child: LayoutBuilder(
+                    builder: (context, constraints) => Wrap(
+                      spacing: 4,
+                      runSpacing: 4,
+                      children: [
+                        if (bestTimeLabel != null)
+                          ConstrainedBox(
+                            constraints: BoxConstraints(
+                              maxWidth: vibes.isNotEmpty
+                                  ? constraints.maxWidth - 72
+                                  : constraints.maxWidth,
+                            ),
+                            child: GoldenHourChip(
+                              label: bestTimeLabel!,
+                              compact: true,
+                            ),
                           ),
-                        ),
-                      if (bestTimeLabel != null && vibes.isNotEmpty)
-                        const SizedBox(width: 4),
-                      if (vibes.isNotEmpty)
-                        VibeChip(
-                          label: vibes.first.label,
-                          variant: vibes.first.chipVariant,
-                        ),
-                    ],
+                        if (vibes.isNotEmpty)
+                          VibeChip(
+                            label: vibes.first.label,
+                            variant: vibes.first.chipVariant,
+                          ),
+                      ],
+                    ),
                   ),
                 ),
 

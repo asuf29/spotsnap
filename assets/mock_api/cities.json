@@ -1,0 +1,39 @@
+{
+  "cities": [
+    {
+      "id": "paris",
+      "name": "Paris",
+      "country": "France",
+      "tagline": "Romantic rooftops & cafe aesthetics",
+      "spotCount": 8
+    },
+    {
+      "id": "seoul",
+      "name": "Seoul",
+      "country": "South Korea",
+      "tagline": "Neon streets & clean girl cafes",
+      "spotCount": 6
+    },
+    {
+      "id": "istanbul",
+      "name": "İstanbul",
+      "country": "Türkiye",
+      "tagline": "Bosphorus sunsets & old city vibes",
+      "spotCount": 6
+    },
+    {
+      "id": "tokyo",
+      "name": "Tokyo",
+      "country": "Japan",
+      "tagline": "Streetwear nights & hidden alleys",
+      "spotCount": 6
+    },
+    {
+      "id": "santorini",
+      "name": "Santorini",
+      "country": "Greece",
+      "tagline": "White-blue dream shots",
+      "spotCount": 5
+    }
+  ]
+}

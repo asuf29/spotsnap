@@ -1,0 +1,141 @@
+{
+  "@@locale": "en",
+  "appTitle": "SnapSpot",
+  "navHome": "Home",
+  "navDiscover": "Discover",
+  "navPlan": "Plan",
+  "navCreate": "Create",
+  "navProfile": "Profile",
+  "goodMorning": "Good morning",
+  "readyToShoot": "Ready to shoot?",
+  "trendingCities": "Trending cities",
+  "forYou": "For you",
+  "searchCityHint": "Search city or country…",
+  "whereShooting": "Where are you shooting?",
+  "whereShootingSubtitle": "Pick a city to explore photo spots, poses & routes.",
+  "trending": "Trending",
+  "featuredWorldwide": "Featured worldwide",
+  "smartRoute": "Smart Route",
+  "selectSpotsRoute": "Select spots to build your shoot day.",
+  "selectSpotsOrCity": "Pick a city in Discover or select featured spots.",
+  "prioritizeGoldenHour": "Prioritize golden hour",
+  "prioritizeGoldenHourSubtitle": "Sort sunrise & sunset spots first",
+  "generateRoute": "Generate Route",
+  "generateRouteCount": "Generate Route ({count})",
+  "@generateRouteCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "selectSpotsFirst": "Select spots first",
+  "routeOptimized": "Route optimized for golden hour",
+  "viewFirstStop": "View first stop",
+  "minWalk": "{minutes} min walk",
+  "@minWalk": {
+    "placeholders": {
+      "minutes": {"type": "int"}
+    }
+  },
+  "createTitle": "Create",
+  "createSubtitle": "Pose, outfit & on-location AI guidance.",
+  "poseAssistant": "AI Pose Assistant",
+  "poseAssistantSubtitle": "Vibe-based poses, lens & angle tips",
+  "posesForSpot": "Poses for {spotName}",
+  "@posesForSpot": {
+    "placeholders": {
+      "spotName": {"type": "String"}
+    }
+  },
+  "allVibes": "All vibes",
+  "noPosesFilter": "No poses for this filter.",
+  "outfitPlanner": "Outfit Planner",
+  "outfitPlannerSubtitle": "Concept looks, color harmony & wardrobe",
+  "photoConcepts": "Photo concepts",
+  "yourWardrobe": "Your wardrobe",
+  "aiOutfitSuggestion": "AI outfit suggestion",
+  "photoAssistant": "AI Photo Assistant",
+  "photoAssistantSubtitle": "Ask before you shoot — pose, lens, crowd",
+  "overview": "Overview",
+  "addToRoute": "Add to Route",
+  "spotNotFound": "Spot not found",
+  "pose": "Pose",
+  "outfit": "Outfit",
+  "noSpotsCategory": "No spots in this category",
+  "save": "Save",
+  "route": "Route",
+  "tapForDetails": "Tap for details →",
+  "profileGuest": "Guest",
+  "collections": "Collections",
+  "favorites": "Favorites",
+  "bucketList": "Travel bucket list",
+  "savedCities": "Saved cities",
+  "moodboards": "Moodboards",
+  "community": "Community",
+  "shareSpot": "Share a spot",
+  "submitHiddenGems": "Submit hidden gems",
+  "settings": "Settings",
+  "darkMode": "Dark mode",
+  "language": "Language",
+  "signOut": "Sign out",
+  "premiumTitle": "Create viral content\nwithout limits",
+  "premiumSubtitle": "Everything you need for aesthetic travel shoots.",
+  "unlockPremium": "Unlock AI routes & unlimited poses",
+  "startFreeTrial": "Start 7-day free trial",
+  "restorePurchases": "Restore purchases",
+  "cancelAnytime": "Cancel anytime. Restore purchases on device.",
+  "welcomeBack": "Welcome back",
+  "signInSubtitle": "Sign in to plan your next viral shoot.",
+  "signIn": "Sign In",
+  "continueGuest": "Continue as guest",
+  "continueApple": "Continue with Apple",
+  "getStarted": "Get Started",
+  "skip": "Skip",
+  "onboarding1Title": "Find your shot",
+  "onboarding1Subtitle": "Discover the most Instagrammable spots in any city.",
+  "onboarding2Title": "Pose like a pro",
+  "onboarding2Subtitle": "AI-powered pose suggestions for every vibe.",
+  "onboarding3Title": "Plan the perfect day",
+  "onboarding3Subtitle": "Smart routes timed for golden hour.",
+  "continuePage": "Continue",
+  "spotsSaved": "{count} spots saved",
+  "@spotsSaved": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "destinationsCount": "{count} destinations",
+  "@destinationsCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "boardsCount": "{count} boards",
+  "@boardsCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "citiesCount": "{count} cities",
+  "@citiesCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "goldenHourAlerts": "Golden hour alerts",
+  "goldenHourAlertsSubtitle": "Daily reminder before best shoot light",
+  "notificationsEnabled": "Notifications enabled",
+  "notificationsDisabled": "Notifications disabled",
+  "premiumActive": "SnapSpot+ active",
+  "demoPurchaseSuccess": "SnapSpot+ unlocked (demo)",
+  "demoPurchaseFailed": "Purchase could not be completed",
+  "shareSpotTitle": "Check out {spotName} on SnapSpot!",
+  "@shareSpotTitle": {
+    "placeholders": {
+      "spotName": {"type": "String"}
+    }
+  },
+  "copiedToClipboard": "Copied to clipboard",
+  "back": "Back",
+  "noSpotsCategory": "No spots in this category",
+  "share": "Share"
+}

@@ -1,0 +1,472 @@
+{
+  "spots": [
+    {
+      "id": "paris-eiffel",
+      "name": "Eiffel Viewpoint",
+      "cityId": "paris",
+      "category": "sunset",
+      "bestTimeLabel": "Sunset 19:42",
+      "crowd": "medium",
+      "vibes": [
+        "viral",
+        "travelInfluencer"
+      ],
+      "popularityScore": 98,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-paris-eiffel/600/800"
+      ]
+    },
+    {
+      "id": "paris-marais",
+      "name": "Le Marais Cafe",
+      "cityId": "paris",
+      "category": "cafe",
+      "bestTimeLabel": "Morning 09:00",
+      "crowd": "low",
+      "vibes": [
+        "cleanGirl"
+      ],
+      "popularityScore": 85,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-paris-marais/600/800"
+      ]
+    },
+    {
+      "id": "paris-rooftop",
+      "name": "Galeries Rooftop",
+      "cityId": "paris",
+      "category": "rooftop",
+      "bestTimeLabel": "Golden 18:15",
+      "crowd": "high",
+      "vibes": [
+        "oldMoney"
+      ],
+      "popularityScore": 91,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-paris-rooftop/600/800"
+      ]
+    },
+    {
+      "id": "paris-seine",
+      "name": "Seine River Walk",
+      "cityId": "paris",
+      "category": "popular",
+      "bestTimeLabel": "Blue hour 20:10",
+      "crowd": "medium",
+      "vibes": [
+        "pinterestGirl"
+      ],
+      "popularityScore": 88,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-paris-seine/600/800"
+      ]
+    },
+    {
+      "id": "paris-montmartre",
+      "name": "Montmartre Steps",
+      "cityId": "paris",
+      "category": "hiddenGem",
+      "bestTimeLabel": "Morning 08:30",
+      "crowd": "low",
+      "vibes": [
+        "pinterestGirl"
+      ],
+      "popularityScore": 79,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-paris-montmartre/600/800"
+      ]
+    },
+    {
+      "id": "paris-louvre",
+      "name": "Louvre Pyramid",
+      "cityId": "paris",
+      "category": "popular",
+      "bestTimeLabel": "Night 21:00",
+      "crowd": "high",
+      "vibes": [
+        "viral"
+      ],
+      "popularityScore": 95,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-paris-louvre/600/800"
+      ]
+    },
+    {
+      "id": "paris-pont",
+      "name": "Pont Alexandre III",
+      "cityId": "paris",
+      "category": "sunset",
+      "bestTimeLabel": "Sunset 19:20",
+      "crowd": "medium",
+      "vibes": [
+        "oldMoney"
+      ],
+      "popularityScore": 87,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-paris-pont/600/800"
+      ]
+    },
+    {
+      "id": "paris-passy",
+      "name": "Passy Hidden Alley",
+      "cityId": "paris",
+      "category": "hiddenGem",
+      "bestTimeLabel": "Afternoon 15:00",
+      "crowd": "low",
+      "vibes": [
+        "cleanGirl"
+      ],
+      "popularityScore": 72,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-paris-passy/600/800"
+      ]
+    },
+    {
+      "id": "seoul-hanriver",
+      "name": "Han River Park",
+      "cityId": "seoul",
+      "category": "sunset",
+      "bestTimeLabel": "Sunset 19:05",
+      "crowd": "medium",
+      "vibes": [
+        "travelInfluencer"
+      ],
+      "popularityScore": 90,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-seoul-hanriver/600/800"
+      ]
+    },
+    {
+      "id": "seoul-gangnam",
+      "name": "Gangnam Street Crossing",
+      "cityId": "seoul",
+      "category": "popular",
+      "bestTimeLabel": "Night 21:30",
+      "crowd": "high",
+      "vibes": [
+        "viral"
+      ],
+      "popularityScore": 93,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-seoul-gangnam/600/800"
+      ]
+    },
+    {
+      "id": "seoul-cafe",
+      "name": "Seongsu Aesthetic Cafe",
+      "cityId": "seoul",
+      "category": "cafe",
+      "bestTimeLabel": "Morning 10:00",
+      "crowd": "low",
+      "vibes": [
+        "cleanGirl"
+      ],
+      "popularityScore": 84,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-seoul-cafe/600/800"
+      ]
+    },
+    {
+      "id": "seoul-rooftop",
+      "name": "Itaewon Rooftop Bar",
+      "cityId": "seoul",
+      "category": "rooftop",
+      "bestTimeLabel": "Golden 18:40",
+      "crowd": "medium",
+      "vibes": [
+        "pinterestGirl"
+      ],
+      "popularityScore": 82,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-seoul-rooftop/600/800"
+      ]
+    },
+    {
+      "id": "seoul-bukchon",
+      "name": "Bukchon Hanok Alley",
+      "cityId": "seoul",
+      "category": "hiddenGem",
+      "bestTimeLabel": "Morning 08:00",
+      "crowd": "medium",
+      "vibes": [
+        "oldMoney"
+      ],
+      "popularityScore": 86,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-seoul-bukchon/600/800"
+      ]
+    },
+    {
+      "id": "seoul-ddp",
+      "name": "DDP Futuristic Plaza",
+      "cityId": "seoul",
+      "category": "popular",
+      "bestTimeLabel": "Blue hour 20:00",
+      "crowd": "high",
+      "vibes": [
+        "viral"
+      ],
+      "popularityScore": 89,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-seoul-ddp/600/800"
+      ]
+    },
+    {
+      "id": "istanbul-galata",
+      "name": "Galata Tower View",
+      "cityId": "istanbul",
+      "category": "popular",
+      "bestTimeLabel": "Sunset 19:35",
+      "crowd": "high",
+      "vibes": [
+        "viral",
+        "travelInfluencer"
+      ],
+      "popularityScore": 96,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-istanbul-galata/600/800"
+      ]
+    },
+    {
+      "id": "istanbul-bosphorus",
+      "name": "Bosphorus Sunset Pier",
+      "cityId": "istanbul",
+      "category": "sunset",
+      "bestTimeLabel": "Sunset 19:28",
+      "crowd": "medium",
+      "vibes": [
+        "oldMoney"
+      ],
+      "popularityScore": 92,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-istanbul-bosphorus/600/800"
+      ]
+    },
+    {
+      "id": "istanbul-balat",
+      "name": "Balat Color Street",
+      "cityId": "istanbul",
+      "category": "hiddenGem",
+      "bestTimeLabel": "Morning 09:30",
+      "crowd": "low",
+      "vibes": [
+        "pinterestGirl"
+      ],
+      "popularityScore": 88,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-istanbul-balat/600/800"
+      ]
+    },
+    {
+      "id": "istanbul-cafe",
+      "name": "Karaköy Third Wave Cafe",
+      "cityId": "istanbul",
+      "category": "cafe",
+      "bestTimeLabel": "Morning 10:00",
+      "crowd": "low",
+      "vibes": [
+        "cleanGirl"
+      ],
+      "popularityScore": 80,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-istanbul-cafe/600/800"
+      ]
+    },
+    {
+      "id": "istanbul-rooftop",
+      "name": "Sultanahmet Rooftop",
+      "cityId": "istanbul",
+      "category": "rooftop",
+      "bestTimeLabel": "Golden 18:50",
+      "crowd": "medium",
+      "vibes": [
+        "travelInfluencer"
+      ],
+      "popularityScore": 87,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-istanbul-rooftop/600/800"
+      ]
+    },
+    {
+      "id": "istanbul-princes",
+      "name": "Princes Islands Dock",
+      "cityId": "istanbul",
+      "category": "beach",
+      "bestTimeLabel": "Afternoon 14:00",
+      "crowd": "low",
+      "vibes": [
+        "pinterestGirl"
+      ],
+      "popularityScore": 81,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-istanbul-princes/600/800"
+      ]
+    },
+    {
+      "id": "tokyo-shibuya",
+      "name": "Shibuya Crossing",
+      "cityId": "tokyo",
+      "category": "popular",
+      "bestTimeLabel": "Night 20:00",
+      "crowd": "high",
+      "vibes": [
+        "viral"
+      ],
+      "popularityScore": 97,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-tokyo-shibuya/600/800"
+      ]
+    },
+    {
+      "id": "tokyo-shinjuku",
+      "name": "Shinjuku Neon Alley",
+      "cityId": "tokyo",
+      "category": "popular",
+      "bestTimeLabel": "Night 22:00",
+      "crowd": "high",
+      "vibes": [
+        "travelInfluencer"
+      ],
+      "popularityScore": 94,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-tokyo-shinjuku/600/800"
+      ]
+    },
+    {
+      "id": "tokyo-teamLab",
+      "name": "TeamLab Borderless",
+      "cityId": "tokyo",
+      "category": "hiddenGem",
+      "bestTimeLabel": "Indoor 11:00",
+      "crowd": "medium",
+      "vibes": [
+        "pinterestGirl"
+      ],
+      "popularityScore": 90,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-tokyo-teamLab/600/800"
+      ]
+    },
+    {
+      "id": "tokyo-cafe",
+      "name": "Omotesando Mirror Cafe",
+      "cityId": "tokyo",
+      "category": "cafe",
+      "bestTimeLabel": "Morning 09:00",
+      "crowd": "low",
+      "vibes": [
+        "cleanGirl"
+      ],
+      "popularityScore": 83,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-tokyo-cafe/600/800"
+      ]
+    },
+    {
+      "id": "tokyo-roppongi",
+      "name": "Roppongi Hills Rooftop",
+      "cityId": "tokyo",
+      "category": "rooftop",
+      "bestTimeLabel": "Sunset 18:55",
+      "crowd": "medium",
+      "vibes": [
+        "oldMoney"
+      ],
+      "popularityScore": 88,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-tokyo-roppongi/600/800"
+      ]
+    },
+    {
+      "id": "tokyo-odaiba",
+      "name": "Odaiba Beach Boardwalk",
+      "cityId": "tokyo",
+      "category": "beach",
+      "bestTimeLabel": "Sunset 18:40",
+      "crowd": "medium",
+      "vibes": [
+        "travelInfluencer"
+      ],
+      "popularityScore": 85,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-tokyo-odaiba/600/800"
+      ]
+    },
+    {
+      "id": "santorini-oia",
+      "name": "Oia Blue Dome",
+      "cityId": "santorini",
+      "category": "sunset",
+      "bestTimeLabel": "Sunset 19:50",
+      "crowd": "high",
+      "vibes": [
+        "viral",
+        "pinterestGirl"
+      ],
+      "popularityScore": 99,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-santorini-oia/600/800"
+      ]
+    },
+    {
+      "id": "santorini-fira",
+      "name": "Fira Cliff Walk",
+      "cityId": "santorini",
+      "category": "popular",
+      "bestTimeLabel": "Golden 18:30",
+      "crowd": "medium",
+      "vibes": [
+        "travelInfluencer"
+      ],
+      "popularityScore": 92,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-santorini-fira/600/800"
+      ]
+    },
+    {
+      "id": "santorini-beach",
+      "name": "Red Beach Cove",
+      "cityId": "santorini",
+      "category": "beach",
+      "bestTimeLabel": "Morning 08:00",
+      "crowd": "low",
+      "vibes": [
+        "cleanGirl"
+      ],
+      "popularityScore": 86,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-santorini-beach/600/800"
+      ]
+    },
+    {
+      "id": "santorini-cafe",
+      "name": "Imerovigli White Cafe",
+      "cityId": "santorini",
+      "category": "cafe",
+      "bestTimeLabel": "Morning 09:30",
+      "crowd": "low",
+      "vibes": [
+        "oldMoney"
+      ],
+      "popularityScore": 84,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-santorini-cafe/600/800"
+      ]
+    },
+    {
+      "id": "santorini-hidden",
+      "name": "Pyrgos Hidden Steps",
+      "cityId": "santorini",
+      "category": "hiddenGem",
+      "bestTimeLabel": "Sunrise 06:15",
+      "crowd": "low",
+      "vibes": [
+        "pinterestGirl"
+      ],
+      "popularityScore": 78,
+      "imageUrls": [
+        "https://picsum.photos/seed/snapspot-santorini-hidden/600/800"
+      ]
+    }
+  ]
+}
